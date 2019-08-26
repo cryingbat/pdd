@@ -1,0 +1,50 @@
+.container{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .image-slider{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* 改变滚动行为为滑动  scroll-behavior: smooth;*/
+    scroll-snap-type: x mandatory;
+    /* 强制在x轴上有吸附效果 */
+    -webkit-overflow-scrolling: touch;
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 内容在保持其宽高比的同时填充元素的整个内容框。如果对象的宽高比与内容框不相匹配，该对象将被剪裁以适应内容框 */
+    scroll-snap-align: start;
+}
+.nav-section{
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    opacity: 0.5;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.nav-section .slider-button{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-decoration: none;
+    margin: 5px;
+}
+.nav-section .silder-button-select{
+    background: red;
+}

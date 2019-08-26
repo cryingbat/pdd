@@ -1,0 +1,36 @@
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+    /* 真正的手机上可以使用触摸去滚动 */
+}
+ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px;
+    padding: 3px 5px;
+    white-space: nowrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.active{
+    color: green;
+}
+
+.indicator{
+    background-color: green;
+    height: 2px;
+    width: 2rem;
+    margin-top: 2px;
+}
