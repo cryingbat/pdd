@@ -1,0 +1,16 @@
+:host{
+    display: flex;
+    overflow-x: auto;
+}
+.container{
+    background-color: #fff;
+    padding: 0 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: smooth;
+    display: grid;
+    place-content: stretch;
+    place-items: center;
+    grid-gap: 0.4rem;
+    grid-auto-flow: row;
+}
