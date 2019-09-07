@@ -1,0 +1,8 @@
+<app-scrollable-tab [menus]="menus" (TabSelected)="handleSelected($event)" backgroundColor="#fdfdfd"></app-scrollable-tab>
+<app-image-slider [sliders] = "imageSliders"></app-image-slider>
+<app-horizontal-grid>
+    <div AppGridItem *ngFor="let item of channels;let idx = index;">
+        <img AppGridItemImage= "4rem" fitMode = "cover" src="{{item.icon}}" />
+        <div AppGridItemTitle>{{item.title}}</div>
+    </div>
+</app-horizontal-grid>
